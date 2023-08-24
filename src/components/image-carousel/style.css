@@ -1,0 +1,42 @@
+.image-carousel-container {
+  height: 100%;
+  width: 100%;
+  background-color: lightyellow;
+  position: relative;
+}
+
+.nav-button {
+  height: 100%;
+  width: clamp(50px, 8%, 200px);
+  position: absolute;
+  border: none;
+  box-shadow: none;
+  background-color: lightgray;
+  opacity: 50%;
+}
+
+.nav-button:active {
+  opacity: 80%;
+}
+
+.prev-button {
+  top: 0;
+  left: 0;
+}
+
+.next-button{
+  top: 0;
+  right: 0
+
+}
+
+.nav-bar {
+  width: 100%;
+  height: 40px;
+  background-color: green;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 50%;
+}
+
