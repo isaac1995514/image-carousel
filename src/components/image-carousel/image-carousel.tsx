@@ -27,12 +27,16 @@ interface ImageCarouselProps {
 
 export const ImageCarousel: React.FC<ImageCarouselProps> = ({}) => {
 
+  const [currentImage, setCurrentImage] = React.useState(0)
+
   return (
     <div className='image-carousel-container'>
       <button className='nav-button prev-button'>
-
+        <span>{"<"}</span>
       </button>
-      <button className='nav-button next-button'></button>
+      <button className='nav-button next-button'>
+        <span>{">"}</span>
+      </button>
       <div className='nav-bar'></div>
     </div>
   )

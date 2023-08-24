@@ -1,18 +1,19 @@
 .image-carousel-container {
   height: 100%;
-  width: 100%;
+  width: clamp(800px, 100%, 2000px);
   background-color: lightyellow;
   position: relative;
 }
 
 .nav-button {
   height: 100%;
-  width: clamp(50px, 8%, 200px);
+  width: clamp(50px, 5%, 100px);
   position: absolute;
   border: none;
   box-shadow: none;
   background-color: lightgray;
   opacity: 50%;
+  font-size: 3rem;
 }
 
 .nav-button:active {
