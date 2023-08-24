@@ -5,9 +5,12 @@ interface ImageLoaderProps {
   url: string
   thumbnail: string
   alt: string
+  height: number
+  width: number
+  hidden: number
 }
 
-export const ImageLoader = ({id, url, thumbnail, alt}) => {
+export const ImageLoader: React.FC<ImageLoaderProps> = ({id, url, thumbnail, alt, width, height}) => {
 
-  return <img src={thumbnail} alt={alt}/>
+  return <img src={url} alt={alt} height={height} width={width}/>
 }
